@@ -1,0 +1,73 @@
+<doctype html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+            <link rel="stylesheet" href="style.css"> 
+            <title>Image Search Abstraction Layer Microservice</title>
+        </head>
+        <body>
+                <div class="container">
+                        <h1>Image Search Abstraction Layer Microservice</h1>
+                        <div class="main-container">
+                            <h2>A freeCodeCamp Javascript Back-End Challange</h2>
+                            <blockquote>
+                                <p>This challange makes use of NodeJS, ExpressJS and MongoDB.</p>
+                            </blockquote>
+                            <blockquote>
+                                <p><strong>Challange:</strong><br/>
+                                    <ul>
+                                        <li>
+                                            To create an Image Search Abstraction Layer Microservice. Given a search query as a parameter, a JSON object will be returned with the image URLs, 
+                                            alt text and page urls for a set of images relating to the given search string.
+                                        </li>
+                                        <li>
+                                            To be able to paginate through the responses by adding a <code>?offset=2</code> parameter to the URL.
+                                        </li>
+                                        <li>
+                                           Additionally, to be able to return in a seperate JSON response, a list of the most recently submitted search strings.
+                                        </li>
+                                    </ul>
+                                </p> 
+                            </blockquote>         
+                            <h3>Usage:</h3>
+                            <p>
+                                    &#8226; In the <strong>url bar</strong>, after the current url. Type <code>/search/</code> followed by the search term you want to <strong>get images</strong> for.<br />
+                                    &#8226; For example to search for <strong>funny cats</strong> type  <code>/search/funny cats</code> to receive a <strong>list of images</strong> for that search term.<br/>
+                                    &#8226; If you want to paginate through <strong>extra results</strong>, you can append <code>?offset=2</code>. When the <strong>offset number</strong> represents the page number you want.<br/>
+                                    &#8226; You can also see a list of the most <strong>recent</strong> search terms. Just type <code>/recent</code> after the current url.
+                            </p>
+                            <h3>Example Usage:</h3>
+                            <code>Click me: <a href="http://localhost:3000/search/wallpapers">http://localhost:3000/search/wallpapers</a></code><br/>
+                            <code>Click me: <a href="http://localhost:3000/search/best%20memes">http://localhost:3000/search/best memes</a></code><br/>
+                            <code>Click me: <a href="http://localhost:3000/search/funny%20gifs">http://localhost:3000/search/funny gifs</a></code><br/>
+                            <code>Click me: <a href="http://localhost:3000/search/best%20imgur%20pics">http://localhost:3000/search/best imgur pics</a></code><br/>
+                            <h3>Example Output:</h3>
+                            <p><strong>Returned Search Results</strong></p>
+                            <code>
+                                {
+                                    Website: "www.ign.com",
+                                    Image Link: "http://i.imgur.com/g6Llx.jpg",
+                                    Image Text: "NinjaRealist's Best of Imgur: November 28th | IGN Boards",
+                                    Context Link: "http://www.ign.com/boards/threads/ninjarealists-best-of-imgur-november-28th.452773681/",
+                                    Thumbnail Image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1N6X_ha9bNDNImFv0frqOV6qljlGinJTZ5Mhrb-H-Coa9FknBl5DVheA"
+                                }
+                            </code>
+                            <br/><br/>
+                            <p><strong>List of most searched for strings</strong></p>
+                            <code>
+                                {
+                                    Search Term: "best imgur pics",
+                                    Timestamp: "2017-09-11T15:12:13.638Z",
+                                    Date: "Mon Sep 11 2017"
+                                }
+                            </code>
+                            <br/>
+                        </div>
+                </div>
+                <footer>
+                    <p>Code and Design by <a href="http://seanmurphy.eu/" target="_blank">Sean Murphy</a></p>
+                </footer>
+        </body>
+    </html>

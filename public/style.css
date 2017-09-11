@@ -1,0 +1,49 @@
+/********************************
+    Google Fonts
+*********************************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Special+Elite');
+
+/********************************
+    General
+*********************************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-family: 'Special Elite', sans-serif;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: #3661A2;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.main-container {
+    margin-top: 7.5%;
+    padding-left: 5%;
+}
+
+h2, h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+li {
+    list-style-type: square;
+}
